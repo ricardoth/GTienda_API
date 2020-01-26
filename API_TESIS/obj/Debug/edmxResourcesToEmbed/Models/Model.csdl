@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bdEcommerceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bdEcommerceEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="pa_Activar_Categoria">
+      <Parameter Name="id_categoria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Activar_Cliente">
+      <Parameter Name="id_cliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Activar_Ped_Prod">
+      <Parameter Name="id_ped_prod" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Activar_Pedido">
+      <Parameter Name="id_pedido" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Activar_Producto">
+      <Parameter Name="id_producto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Activar_Usuario">
+      <Parameter Name="id_usuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Combo_Categoria" ReturnType="Collection(String)" />
+    <FunctionImport Name="pa_Combo_ID_Categoria" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Eliminar_Categoria">
+      <Parameter Name="id_categoria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Eliminar_Cliente">
+      <Parameter Name="id_cliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Eliminar_Ped_Prod">
+      <Parameter Name="id_ped_prod" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Eliminar_Pedido">
+      <Parameter Name="id_pedido" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Eliminar_Producto">
+      <Parameter Name="id_producto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Eliminar_Usuario">
+      <Parameter Name="id_usuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Insertar_Categoria">
+      <Parameter Name="nom_categoria" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Insertar_Cliente">
+      <Parameter Name="nombre" Mode="In" Type="String" />
+      <Parameter Name="apellido" Mode="In" Type="String" />
+      <Parameter Name="rut" Mode="In" Type="String" />
+      <Parameter Name="direccion" Mode="In" Type="String" />
+      <Parameter Name="fono" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Insertar_Ped_Prod">
+      <Parameter Name="producto" Mode="In" Type="Int32" />
+      <Parameter Name="pedido" Mode="In" Type="Int32" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Insertar_Pedido">
+      <Parameter Name="fecha" Mode="In" Type="String" />
+      <Parameter Name="monto" Mode="In" Type="Int32" />
+      <Parameter Name="detalle" Mode="In" Type="String" />
+      <Parameter Name="cliente" Mode="In" Type="Int32" />
+      <Parameter Name="producto" Mode="In" Type="Int32" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Insertar_Producto">
+      <Parameter Name="nom_producto" Mode="In" Type="String" />
+      <Parameter Name="detalle" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+      <Parameter Name="precio" Mode="In" Type="Int32" />
+      <Parameter Name="stock" Mode="In" Type="Int32" />
+      <Parameter Name="categoria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Insertar_Usuario">
+      <Parameter Name="nom_usuario" Mode="In" Type="String" />
+      <Parameter Name="pass" Mode="In" Type="String" />
+      <Parameter Name="estado" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Categoria" ReturnType="Collection(bdEcommerceModel.pa_Listar_Categoria_Result)" />
+    <FunctionImport Name="pa_Listar_Categoria_ID" ReturnType="Collection(bdEcommerceModel.pa_Listar_Categoria_ID_Result)">
+      <Parameter Name="id_categoria" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Categoria_NoVigente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Categoria_NoVigente_Result)" />
+    <FunctionImport Name="pa_Listar_Cliente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Cliente_Result)" />
+    <FunctionImport Name="pa_Listar_Cliente_ID" ReturnType="Collection(bdEcommerceModel.pa_Listar_Cliente_ID_Result)">
+      <Parameter Name="id_cliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Cliente_NoVigente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Cliente_NoVigente_Result)" />
+    <FunctionImport Name="pa_Listar_Ped_Prod" ReturnType="Collection(bdEcommerceModel.pa_Listar_Ped_Prod_Result)" />
+    <FunctionImport Name="pa_Listar_Ped_Prod_ID" ReturnType="Collection(bdEcommerceModel.pa_Listar_Ped_Prod_ID_Result)">
+      <Parameter Name="id_ped_prod" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Ped_Prod_NoVigente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Ped_Prod_NoVigente_Result)" />
+    <FunctionImport Name="pa_Listar_Pedido" ReturnType="Collection(bdEcommerceModel.pa_Listar_Pedido_Result)" />
+    <FunctionImport Name="pa_Listar_Pedido_ID" ReturnType="Collection(bdEcommerceModel.pa_Listar_Pedido_ID_Result)">
+      <Parameter Name="id_pedido" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Pedido_NoVigente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Pedido_NoVigente_Result)" />
+    <FunctionImport Name="pa_Listar_Producto" ReturnType="Collection(bdEcommerceModel.pa_Listar_Producto_Result)" />
+    <FunctionImport Name="pa_Listar_Producto_ID" ReturnType="Collection(bdEcommerceModel.pa_Listar_Producto_ID_Result)">
+      <Parameter Name="id_producto" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Producto_NoVigente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Producto_NoVigente_Result)" />
+    <FunctionImport Name="pa_Listar_Usuario" ReturnType="Collection(bdEcommerceModel.pa_Listar_Usuario_Result)" />
+    <FunctionImport Name="pa_Listar_Usuario_ID" ReturnType="Collection(bdEcommerceModel.pa_Listar_Usuario_ID_Result)">
+      <Parameter Name="id_usuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Listar_Usuario_NoVigente" ReturnType="Collection(bdEcommerceModel.pa_Listar_Usuario_NoVigente_Result)" />
+    <FunctionImport Name="pa_Login" ReturnType="Collection(Int32)">
+      <Parameter Name="nom_usuario" Mode="In" Type="String" />
+      <Parameter Name="pass" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pa_Mayor_Pedido" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Menor_Pedido" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Precio_IVA" ReturnType="Collection(Decimal)" />
+    <FunctionImport Name="pa_Precio_Maximo" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Precio_Minimo" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Precio_Promedio" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Suma_Monto_Pedidos" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Suma_Monto_Productos" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Suma_Stock" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Total_Clientes" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Total_Productos" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="pa_Total_Usuarios" ReturnType="Collection(Int32)" />
+  </EntityContainer>
+  <ComplexType Name="pa_Listar_Categoria_Result">
+    <Property Type="Int32" Name="id_categoria" Nullable="false" />
+    <Property Type="String" Name="nom_categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Categoria_ID_Result">
+    <Property Type="Int32" Name="id_categoria" Nullable="false" />
+    <Property Type="String" Name="nom_categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Categoria_NoVigente_Result">
+    <Property Type="Int32" Name="id_categoria" Nullable="false" />
+    <Property Type="String" Name="nom_categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Cliente_Result">
+    <Property Type="Int32" Name="id_cliente" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="apellido" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="rut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="direccion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fono" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Cliente_ID_Result">
+    <Property Type="Int32" Name="id_cliente" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="apellido" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="rut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="direccion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fono" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Cliente_NoVigente_Result">
+    <Property Type="Int32" Name="id_cliente" Nullable="false" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="apellido" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="rut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="direccion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fono" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Ped_Prod_Result">
+    <Property Type="Int32" Name="id_ped_prod" Nullable="false" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Ped_Prod_ID_Result">
+    <Property Type="Int32" Name="id_ped_prod" Nullable="false" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Ped_Prod_NoVigente_Result">
+    <Property Type="Int32" Name="id_ped_prod" Nullable="false" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Pedido_Result">
+    <Property Type="Int32" Name="id_pedido" Nullable="false" />
+    <Property Type="String" Name="fecha" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="monto" Nullable="true" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Pedido_ID_Result">
+    <Property Type="Int32" Name="id_pedido" Nullable="false" />
+    <Property Type="String" Name="fecha" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="monto" Nullable="true" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Pedido_NoVigente_Result">
+    <Property Type="Int32" Name="id_pedido" Nullable="false" />
+    <Property Type="String" Name="fecha" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="monto" Nullable="true" />
+    <Property Type="String" Name="nombre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Producto_Result">
+    <Property Type="Int32" Name="id_producto" Nullable="false" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="precio" Nullable="true" />
+    <Property Type="Int32" Name="stock" Nullable="true" />
+    <Property Type="String" Name="nom_categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Producto_ID_Result">
+    <Property Type="Int32" Name="id_producto" Nullable="false" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="precio" Nullable="true" />
+    <Property Type="Int32" Name="stock" Nullable="true" />
+    <Property Type="String" Name="nom_categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Producto_NoVigente_Result">
+    <Property Type="Int32" Name="id_producto" Nullable="false" />
+    <Property Type="String" Name="nom_prod" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="detalle" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="precio" Nullable="true" />
+    <Property Type="Int32" Name="stock" Nullable="true" />
+    <Property Type="String" Name="nom_categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Usuario_Result">
+    <Property Type="Int32" Name="id_usuario" Nullable="false" />
+    <Property Type="String" Name="nom_usuario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="pass" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Usuario_ID_Result">
+    <Property Type="Int32" Name="id_usuario" Nullable="false" />
+    <Property Type="String" Name="nom_usuario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="pass" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pa_Listar_Usuario_NoVigente_Result">
+    <Property Type="Int32" Name="id_usuario" Nullable="false" />
+    <Property Type="String" Name="nom_usuario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="pass" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="estado" Nullable="true" />
+  </ComplexType>
+</Schema>

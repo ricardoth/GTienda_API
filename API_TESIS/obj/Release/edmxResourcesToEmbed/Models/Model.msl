@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bdEcommerceModelStoreContainer" CdmEntityContainer="bdEcommerceEntities">
+    <FunctionImportMapping FunctionImportName="pa_Activar_Categoria" FunctionName="bdEcommerceModel.Store.pa_Activar_Categoria" />
+    <FunctionImportMapping FunctionImportName="pa_Activar_Cliente" FunctionName="bdEcommerceModel.Store.pa_Activar_Cliente" />
+    <FunctionImportMapping FunctionImportName="pa_Activar_Ped_Prod" FunctionName="bdEcommerceModel.Store.pa_Activar_Ped_Prod" />
+    <FunctionImportMapping FunctionImportName="pa_Activar_Pedido" FunctionName="bdEcommerceModel.Store.pa_Activar_Pedido" />
+    <FunctionImportMapping FunctionImportName="pa_Activar_Producto" FunctionName="bdEcommerceModel.Store.pa_Activar_Producto" />
+    <FunctionImportMapping FunctionImportName="pa_Activar_Usuario" FunctionName="bdEcommerceModel.Store.pa_Activar_Usuario" />
+    <FunctionImportMapping FunctionImportName="pa_Combo_Categoria" FunctionName="bdEcommerceModel.Store.pa_Combo_Categoria" />
+    <FunctionImportMapping FunctionImportName="pa_Combo_ID_Categoria" FunctionName="bdEcommerceModel.Store.pa_Combo_ID_Categoria" />
+    <FunctionImportMapping FunctionImportName="pa_Eliminar_Categoria" FunctionName="bdEcommerceModel.Store.pa_Eliminar_Categoria" />
+    <FunctionImportMapping FunctionImportName="pa_Eliminar_Cliente" FunctionName="bdEcommerceModel.Store.pa_Eliminar_Cliente" />
+    <FunctionImportMapping FunctionImportName="pa_Eliminar_Ped_Prod" FunctionName="bdEcommerceModel.Store.pa_Eliminar_Ped_Prod" />
+    <FunctionImportMapping FunctionImportName="pa_Eliminar_Pedido" FunctionName="bdEcommerceModel.Store.pa_Eliminar_Pedido" />
+    <FunctionImportMapping FunctionImportName="pa_Eliminar_Producto" FunctionName="bdEcommerceModel.Store.pa_Eliminar_Producto" />
+    <FunctionImportMapping FunctionImportName="pa_Eliminar_Usuario" FunctionName="bdEcommerceModel.Store.pa_Eliminar_Usuario" />
+    <FunctionImportMapping FunctionImportName="pa_Insertar_Categoria" FunctionName="bdEcommerceModel.Store.pa_Insertar_Categoria" />
+    <FunctionImportMapping FunctionImportName="pa_Insertar_Cliente" FunctionName="bdEcommerceModel.Store.pa_Insertar_Cliente" />
+    <FunctionImportMapping FunctionImportName="pa_Insertar_Ped_Prod" FunctionName="bdEcommerceModel.Store.pa_Insertar_Ped_Prod" />
+    <FunctionImportMapping FunctionImportName="pa_Insertar_Pedido" FunctionName="bdEcommerceModel.Store.pa_Insertar_Pedido" />
+    <FunctionImportMapping FunctionImportName="pa_Insertar_Producto" FunctionName="bdEcommerceModel.Store.pa_Insertar_Producto" />
+    <FunctionImportMapping FunctionImportName="pa_Insertar_Usuario" FunctionName="bdEcommerceModel.Store.pa_Insertar_Usuario" />
+    <FunctionImportMapping FunctionImportName="pa_Listar_Categoria" FunctionName="bdEcommerceModel.Store.pa_Listar_Categoria">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Categoria_Result">
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="nom_categoria" ColumnName="nom_categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Categoria_ID" FunctionName="bdEcommerceModel.Store.pa_Listar_Categoria_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Categoria_ID_Result">
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="nom_categoria" ColumnName="nom_categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Categoria_NoVigente" FunctionName="bdEcommerceModel.Store.pa_Listar_Categoria_NoVigente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Categoria_NoVigente_Result">
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="nom_categoria" ColumnName="nom_categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Cliente" FunctionName="bdEcommerceModel.Store.pa_Listar_Cliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Cliente_Result">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="fono" ColumnName="fono" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Cliente_ID" FunctionName="bdEcommerceModel.Store.pa_Listar_Cliente_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Cliente_ID_Result">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="fono" ColumnName="fono" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Cliente_NoVigente" FunctionName="bdEcommerceModel.Store.pa_Listar_Cliente_NoVigente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Cliente_NoVigente_Result">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="fono" ColumnName="fono" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Ped_Prod" FunctionName="bdEcommerceModel.Store.pa_Listar_Ped_Prod">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Ped_Prod_Result">
+          <ScalarProperty Name="id_ped_prod" ColumnName="id_ped_prod" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Ped_Prod_ID" FunctionName="bdEcommerceModel.Store.pa_Listar_Ped_Prod_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Ped_Prod_ID_Result">
+          <ScalarProperty Name="id_ped_prod" ColumnName="id_ped_prod" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Ped_Prod_NoVigente" FunctionName="bdEcommerceModel.Store.pa_Listar_Ped_Prod_NoVigente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Ped_Prod_NoVigente_Result">
+          <ScalarProperty Name="id_ped_prod" ColumnName="id_ped_prod" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Pedido" FunctionName="bdEcommerceModel.Store.pa_Listar_Pedido">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Pedido_Result">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Pedido_ID" FunctionName="bdEcommerceModel.Store.pa_Listar_Pedido_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Pedido_ID_Result">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Pedido_NoVigente" FunctionName="bdEcommerceModel.Store.pa_Listar_Pedido_NoVigente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Pedido_NoVigente_Result">
+          <ScalarProperty Name="id_pedido" ColumnName="id_pedido" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Producto" FunctionName="bdEcommerceModel.Store.pa_Listar_Producto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Producto_Result">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="nom_categoria" ColumnName="nom_categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Producto_ID" FunctionName="bdEcommerceModel.Store.pa_Listar_Producto_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Producto_ID_Result">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="nom_categoria" ColumnName="nom_categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Producto_NoVigente" FunctionName="bdEcommerceModel.Store.pa_Listar_Producto_NoVigente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Producto_NoVigente_Result">
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="nom_prod" ColumnName="nom_prod" />
+          <ScalarProperty Name="detalle" ColumnName="detalle" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="nom_categoria" ColumnName="nom_categoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Usuario" FunctionName="bdEcommerceModel.Store.pa_Listar_Usuario">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Usuario_Result">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="nom_usuario" ColumnName="nom_usuario" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Usuario_ID" FunctionName="bdEcommerceModel.Store.pa_Listar_Usuario_ID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Usuario_ID_Result">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="nom_usuario" ColumnName="nom_usuario" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Listar_Usuario_NoVigente" FunctionName="bdEcommerceModel.Store.pa_Listar_Usuario_NoVigente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="bdEcommerceModel.pa_Listar_Usuario_NoVigente_Result">
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="nom_usuario" ColumnName="nom_usuario" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pa_Login" FunctionName="bdEcommerceModel.Store.pa_Login" />
+    <FunctionImportMapping FunctionImportName="pa_Mayor_Pedido" FunctionName="bdEcommerceModel.Store.pa_Mayor_Pedido" />
+    <FunctionImportMapping FunctionImportName="pa_Menor_Pedido" FunctionName="bdEcommerceModel.Store.pa_Menor_Pedido" />
+    <FunctionImportMapping FunctionImportName="pa_Precio_IVA" FunctionName="bdEcommerceModel.Store.pa_Precio_IVA" />
+    <FunctionImportMapping FunctionImportName="pa_Precio_Maximo" FunctionName="bdEcommerceModel.Store.pa_Precio_Maximo" />
+    <FunctionImportMapping FunctionImportName="pa_Precio_Minimo" FunctionName="bdEcommerceModel.Store.pa_Precio_Minimo" />
+    <FunctionImportMapping FunctionImportName="pa_Precio_Promedio" FunctionName="bdEcommerceModel.Store.pa_Precio_Promedio" />
+    <FunctionImportMapping FunctionImportName="pa_Suma_Monto_Pedidos" FunctionName="bdEcommerceModel.Store.pa_Suma_Monto_Pedidos" />
+    <FunctionImportMapping FunctionImportName="pa_Suma_Monto_Productos" FunctionName="bdEcommerceModel.Store.pa_Suma_Monto_Productos" />
+    <FunctionImportMapping FunctionImportName="pa_Suma_Stock" FunctionName="bdEcommerceModel.Store.pa_Suma_Stock" />
+    <FunctionImportMapping FunctionImportName="pa_Total_Clientes" FunctionName="bdEcommerceModel.Store.pa_Total_Clientes" />
+    <FunctionImportMapping FunctionImportName="pa_Total_Productos" FunctionName="bdEcommerceModel.Store.pa_Total_Productos" />
+    <FunctionImportMapping FunctionImportName="pa_Total_Usuarios" FunctionName="bdEcommerceModel.Store.pa_Total_Usuarios" />
+  </EntityContainerMapping>
+</Mapping>
